@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [flight_reservation_suite]" parallel="methods">
+  <test thread-count="5" name="test1(failed)" parallel="methods">
+    <parameter name="browserName" value="cr"/>
+    <parameter name="url" value="http://newtours.demoaut.com"/>
+    <classes>
+      <class name="com.newtours.testcases.BookFlight">
+        <methods>
+          <include name="selectFlight"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="findFlight"/>
+        </methods>
+      </class> <!-- com.newtours.testcases.BookFlight -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test thread-count="5" name="test2(failed)" parallel="methods">
+    <parameter name="browserName" value="ff"/>
+    <parameter name="url" value="http://newtours.demoaut.com"/>
+    <classes>
+      <class name="com.newtours.testcases.BookFlight">
+        <methods>
+          <include name="selectFlight"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="findFlight"/>
+        </methods>
+      </class> <!-- com.newtours.testcases.BookFlight -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" name="test3(failed)" parallel="methods">
+    <parameter name="browserName" value="ie"/>
+    <parameter name="url" value="http://newtours.demoaut.com"/>
+    <classes>
+      <class name="com.newtours.testcases.BookFlight">
+        <methods>
+          <include name="selectFlight"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="findFlight"/>
+        </methods>
+      </class> <!-- com.newtours.testcases.BookFlight -->
+    </classes>
+  </test> <!-- test3(failed) -->
+</suite> <!-- Failed suite [flight_reservation_suite] -->
